@@ -10,6 +10,7 @@ import { LogComponent } from './log/log.component';
 import { RouterModule } from '@angular/router';
 import { TimerService } from './timer.service';
 import { TasksService } from './tasks.service';
+import { LoggerService } from './logger.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(
@@ -23,7 +24,8 @@ import { TasksService } from './tasks.service';
   bootstrap:    [ AppComponent ],
   providers: [
     TimerService,
-    TasksService
+    TasksService,
+    LoggerService
   ]
 })
 export class AppModule { }
