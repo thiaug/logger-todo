@@ -9,6 +9,7 @@ export class TimerService {
 
   start(ms:number){
     if(!this.timer){
+      this.counter = 0;
       this.timer = setInterval(()=>{
         this.counter++;
       }, ms)
