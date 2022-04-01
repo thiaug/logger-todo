@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { LoggerService } from './logger.service';
 interface Task {
   title: string;
 }
@@ -7,7 +8,7 @@ interface Task {
 export class TasksService {
   list: Array<Task> = [];
 
-  constructor() {}
+  constructor( public logger: LoggerService) {}
 
   getList() {
     return this.list;

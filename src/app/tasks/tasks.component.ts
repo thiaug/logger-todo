@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggerService } from '../logger.service';
 import { TasksService } from '../tasks.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { TasksService } from '../tasks.service';
 })
 export class TasksComponent implements OnInit {
 
-  constructor(public tasks:TasksService) { }
+  constructor(public tasks:TasksService, public logger: LoggerService) { }
 
   ngOnInit() {
   }
