@@ -10,10 +10,12 @@ import { TimerService } from '../timer.service';
 export class HomeComponent implements OnInit {
 
   constructor(public timer: TimerService, public logger: LoggerService) {
-    this.timer.start(1000)
+    // this.timer.start(1000);
+    this.logger.add("HomeComponent Contructed");
    }
 
   ngOnInit() {
+    this.logger.add("HomeComponent initialized");
   }
 
 }

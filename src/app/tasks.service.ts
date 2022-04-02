@@ -8,7 +8,9 @@ interface Task {
 export class TasksService {
   list: Array<Task> = [];
 
-  constructor( public logger: LoggerService) {}
+  constructor( public logger: LoggerService) {
+    this.logger.add("TasksService Contructed");
+  }
 
   getList() {
     return this.list;

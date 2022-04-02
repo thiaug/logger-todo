@@ -9,9 +9,12 @@ import { TasksService } from '../tasks.service';
 })
 export class TasksComponent implements OnInit {
 
-  constructor(public tasks:TasksService, public logger: LoggerService) { }
+  constructor(public tasks:TasksService, public logger: LoggerService) {
+    this.logger.add("TasksComponent Contructed");
+   }
 
   ngOnInit() {
+    this.logger.add("TasksComponent initialized");
   }
 
 }
