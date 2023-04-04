@@ -1,3 +1,3 @@
-# angular-ivy-sb5g2x
+# Logger e Tarefas Services
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-sb5g2x)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/logger-todo-services)
